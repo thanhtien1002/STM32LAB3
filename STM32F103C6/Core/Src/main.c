@@ -24,6 +24,8 @@
 /* USER CODE BEGIN Includes */
 #include "global.h"
 #include "fsm_automatic.h"
+#include "fsm_manual.h"
+#include "fsm_setting.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -101,9 +103,10 @@ int main(void)
   while (1)
   {
 	  fsm_automatic();
-	  if (isButtonPressed(BUTTON1)==1) toggleREDs();
-	  if (isButtonPressed(BUTTON2)==1) toggleGREENs();
-	  if (isButtonPressed(BUTTON3)==1) toggleYELLOWs();
+	  fsm_manual();
+//	  if (isButtonPressed(BUTTON1)==1) toggleREDs();
+//	  if (isButtonPressed(BUTTON2)==1) toggleGREENs();
+//	  if (isButtonPressed(BUTTON3)==1) toggleYELLOWs();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -13,6 +13,7 @@
 #include "traffic_light.h"
 #include "led7_segment.h"
 
+
 /*-------------------------------- Define States -------------------------------*/
 #define INIT 0
 

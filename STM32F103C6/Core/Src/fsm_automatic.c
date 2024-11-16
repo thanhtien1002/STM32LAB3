@@ -127,28 +127,28 @@ void fsm_automatic(void){
 				break;
 		}
 
-//		// AUTO MODE 4
-//		switch(statusAUTO4){
-//			case INIT:
-//				if (isButtonPressed(BUTTON1)==1)
-//					mode = MODE2;
-//				break;
-//			case MODE2:
-//				if (isButtonPressed(BUTTON1)==1)
-//					mode = MODE3;
-//				break;
-//			case MODE3:
-//				if (isButtonPressed(BUTTON1)==1)
-//					mode = MODE4;
-//				break;
-//			case MODE4:
-//				if (isButtonPressed(BUTTON1)==1)
-//					mode = MODE1;
-//				initVar();
-//				break;
-//			default:
-//				break;
-//		}
+		// AUTO MODE 4
+		switch(statusAUTO4){
+			case INIT:
+				if (isButtonPressed(BUTTON1)==1)
+					mode = MODE2;
+				break;
+			case MODE2:
+				if (isButtonPressed(BUTTON1)==1)
+					mode = MODE3;
+				break;
+			case MODE3:
+				if (isButtonPressed(BUTTON1)==1)
+					mode = MODE4;
+				break;
+			case MODE4:
+				if (isButtonPressed(BUTTON1)==1)
+					mode = MODE1;
+				initVar();
+				break;
+			default:
+				break;
+		}
 	}
 }
 
