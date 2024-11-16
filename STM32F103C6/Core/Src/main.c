@@ -100,7 +100,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  fsm_automatic_run();
+	  fsm_automatic();
+	  if (isButtonPressed(BUTTON1)==1) toggleREDs();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

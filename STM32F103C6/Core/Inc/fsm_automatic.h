@@ -1,8 +1,8 @@
 /*
  * fsm_automatic.h
  *
- *  Created on: Oct 5, 2022
- *      Author: acer
+ *  Created on: Nov 16, 2024
+ *      Author: ASUS
  */
 
 #ifndef INC_FSM_AUTOMATIC_H_
@@ -11,6 +11,7 @@
 #include "main.h"
 #include "global.h"
 
-void fsm_automatic_run();
+void fsm_automatic();
+
 
 #endif /* INC_FSM_AUTOMATIC_H_ */

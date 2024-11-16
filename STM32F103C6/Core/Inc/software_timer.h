@@ -1,8 +1,8 @@
 /*
  * software_timer.h
  *
- *  Created on: Oct 4, 2022
- *      Author: acer
+ *  Created on: Nov 16, 2024
+ *      Author: ASUS
  */
 
 #ifndef INC_SOFTWARE_TIMER_H_

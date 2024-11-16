@@ -1,9 +1,10 @@
 /*
  * software_timer.c
  *
- *  Created on: Oct 4, 2022
- *      Author: acer
+ *  Created on: Nov 16, 2024
+ *      Author: ASUS
  */
+
 #include "software_timer.h"
 
 int timer1_counter = 0;

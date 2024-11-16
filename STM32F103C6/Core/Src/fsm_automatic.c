@@ -1,15 +1,15 @@
 /*
  * fsm_automatic.c
  *
- *  Created on: Oct 5, 2022
- *      Author: acer
+ *  Created on: Nov 16, 2024
+ *      Author: ASUS
  */
 
 #include "fsm_automatic.h"
 
-int led_buffer[2] = {0,0};
-//Each state will have 1s to perform task
-void fsm_automatic_run(void){
+int led_buffer[2] = {0, 0};
+
+void fsm_automatic(void){
 	if (mode == MODE1){
 		// AUTO MODE 1
 		switch (statusAUTO1){
@@ -128,27 +128,28 @@ void fsm_automatic_run(void){
 		}
 
 		// AUTO MODE 4
-//		switch(statusAUTO4){
-//			case INIT:
-//				if (isButtonPressed(BUTTON1)==1)
-//					mode = MODE2;
-//				break;
-//			case MODE2:
-//				if (isButtonPressed(BUTTON1)==1)
-//					mode = MODE3;
-//				break;
-//			case MODE3:
-//				if (isButtonPressed(BUTTON1)==1)
-//					mode = MODE4;
-//				break;
-//			case MODE4:
-//				if (isButtonPressed(BUTTON1)==1)
-//					mode = MODE1;
-//				initVar();
-//				break;
-//			default:
-//				break;
-//		}
+		switch(statusAUTO4){
+			case INIT:
+				if (isButtonPressed(BUTTON1)==1)
+					mode = MODE2;
+				break;
+			case MODE2:
+				if (isButtonPressed(BUTTON1)==1)
+					mode = MODE3;
+				break;
+			case MODE3:
+				if (isButtonPressed(BUTTON1)==1)
+					mode = MODE4;
+				break;
+			case MODE4:
+				if (isButtonPressed(BUTTON1)==1)
+					mode = MODE1;
+				initVar();
+				break;
+			default:
+				break;
+		}
 	}
 
 }
+

@@ -1,8 +1,8 @@
 /*
  * button.c
  *
- *  Created on: Sep 21, 2022
- *      Author: KAI
+ *  Created on: Nov 16, 2024
+ *      Author: ASUS
  */
 
 #include "button.h"
@@ -43,7 +43,7 @@ void getKeyInput(){
 			subKeyProcess(i);
 		  }
 		}else{
-		   TimeForKeyPress --;
+		   TimeForKeyPress--;
 			if (TimeForKeyPress == 0){
 			  KeyReg3[i] = NORMAL_STATE;
 			}
@@ -51,4 +51,5 @@ void getKeyInput(){
 	  }
 	}
 }
+
 

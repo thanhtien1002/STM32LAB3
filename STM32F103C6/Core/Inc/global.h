@@ -1,8 +1,8 @@
 /*
  * global.h
  *
- *  Created on: Oct 5, 2022
- *      Author: acer
+ *  Created on: Nov 16, 2024
+ *      Author: ASUS
  */
 
 #ifndef INC_GLOBAL_H_
@@ -90,3 +90,4 @@ void initWaitingTime(void);
 void initVar(void);
 
 #endif /* INC_GLOBAL_H_ */
+
