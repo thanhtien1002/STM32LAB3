@@ -139,10 +139,6 @@ void fsm_automatic(void){
 				break;
 			case MODE3:
 				if (isButtonPressed(BUTTON1)==1)
-					mode = MODE4;
-				break;
-			case MODE4:
-				if (isButtonPressed(BUTTON1)==1)
 					mode = MODE1;
 				initVar();
 				break;
