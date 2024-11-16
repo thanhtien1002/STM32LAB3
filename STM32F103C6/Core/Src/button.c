@@ -31,24 +31,24 @@ void subKeyProcess(int index){
 
 void getKeyInput(){
 	for(int i=0; i<NUM_OF_BUTTON; i++){
-	  KeyReg2[i] = KeyReg1[i];
-	  KeyReg1[i] = KeyReg0[i];
-	  KeyReg0[i] = HAL_GPIO_ReadPin(GPIOA, buttonList[i]);
-	  if ((KeyReg1[i] == KeyReg0[i]) && (KeyReg1[i] == KeyReg2[i])){
-		if (KeyReg2[i] != KeyReg3[i]){
-		  KeyReg3[i] = KeyReg2[i];
+		KeyReg2[i] = KeyReg1[i];
+	    KeyReg1[i] = KeyReg0[i];
+	    KeyReg0[i] = HAL_GPIO_ReadPin(GPIOA, buttonList[i]);
+	    if ((KeyReg1[i] == KeyReg0[i]) && (KeyReg1[i] == KeyReg2[i])){
+		   if (KeyReg2[i] != KeyReg3[i]){
+		      KeyReg3[i] = KeyReg2[i];
 
-		  if (KeyReg3[i] == PRESSED_STATE){
-			TimeForKeyPress = 500;
-			subKeyProcess(i);
-		  }
-		}else{
-		   TimeForKeyPress--;
-			if (TimeForKeyPress == 0){
-			  KeyReg3[i] = NORMAL_STATE;
-			}
-		}
-	  }
+		      if (KeyReg3[i] == PRESSED_STATE){
+			     TimeForKeyPress = 500;
+			     subKeyProcess(i);
+		      }
+		   } else {
+			   	  TimeForKeyPress--;
+			      if (TimeForKeyPress == 0){
+			      KeyReg3[i] = NORMAL_STATE;
+			      }
+		     }
+	    }
 	}
 }
 
