@@ -127,7 +127,7 @@ void fsm_automatic(void){
 				break;
 		}
 
-		// AUTO MODE 4
+		// CHANGE MODE
 		switch(statusAUTO4){
 			case INIT:
 				if (isButtonPressed(BUTTON1)==1)

@@ -50,9 +50,9 @@ int counterYellow2 = 0;
 /*------------------------------- Function Implementations -------------------------------*/
 
 void initWaitingTime(void) {
-    AUTO_RED = 10;
     AUTO_GREEN = 8;
     AUTO_YELLOW = 2;
+    AUTO_RED = AUTO_GREEN + AUTO_YELLOW;
 }
 
 void initVar(void) {
