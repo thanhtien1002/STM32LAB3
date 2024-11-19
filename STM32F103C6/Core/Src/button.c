@@ -14,7 +14,7 @@ int KeyReg1[NUM_OF_BUTTON] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
 int KeyReg2[NUM_OF_BUTTON] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
 int KeyReg3[NUM_OF_BUTTON] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
 
-int TimeForKeyPress =  500;
+int TimeForKeyPress =  200;
 int button_flag[NUM_OF_BUTTON] = {0, 0, 0};
 
 int isButtonPressed(int index){
@@ -39,7 +39,7 @@ void getKeyInput(){
 		      KeyReg3[i] = KeyReg2[i];
 
 		      if (KeyReg3[i] == PRESSED_STATE){
-			     TimeForKeyPress = 500;
+			     TimeForKeyPress = 200;
 			     subKeyProcess(i);
 		      }
 		   } else {
